@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.unc.thomasshealy.foodlinkfinal.AddData">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_height="150px"
+            android:layout_width="375dp"
+            android:text="Enter Description (at least six characters)"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/phonenumber"
+            android:layout_height="150px"
+            android:layout_width="375dp"
+            android:text="Enter Phone Number (numbers only)"
+            android:inputType="text"/>
+
+        <TextView
+            android:layout_width="375dp"
+            android:layout_height="150px"
+            android:text="Enter Address of Location to Add"/>
+
+        <fragment
+            android:id="@+id/search_bar"
+            android:layout_width="375dp"
+            android:layout_height="150px"
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+            />
+
+        <Button
+            android:layout_width="375dp"
+            android:layout_height="150px"
+            android:text="Add Pickup Location"
+            android:id="@+id/addPickup"
+            android:gravity="center"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:text="Add Food Bank Location"
+            android:id="@+id/addFoodBank"
+            android:gravity="center"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:text="Delete Location"
+            android:id="@+id/deleteLocation"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
